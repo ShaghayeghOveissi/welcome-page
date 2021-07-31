@@ -1,6 +1,6 @@
 # welcome-page-vue
 ```
-This Welcome page has been built using Vue.js as a JavaScript framework and I have used HTML, JavaScript and SCSS in order to complete the front-end design.
+This Welcome page has been built using Vue.js as a JavaScript framework. I have used HTML, JavaScript and SCSS in order to complete the front-end design.
 Bootstrap front-end framework has been used for the carousel.
 ```
 ### Browser Compatibility
