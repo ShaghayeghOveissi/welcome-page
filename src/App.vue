@@ -1,17 +1,42 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <MainNav />
+    <DefaultCarousel :slides="carouselSlides" />
+    <WelcomeInformation title="Welcome"/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import MainNav from './components/navbar/main-nav.vue'
+import DefaultCarousel from './components/carousel/default-carousel.vue'
+import WelcomeInformation from './components/welcome-information.vue'
 
 export default {
   name: 'App',
+
   components: {
-    HelloWorld
+    MainNav,
+    DefaultCarousel,
+    WelcomeInformation
+  },
+
+  data() {
+    return {
+      carouselSlides: [
+        {
+          caption: 'First slide',
+          image: 'https://picsum.photos/1024/480/?image=10'
+        },
+        {
+          caption: 'Second slide',
+          image: 'https://picsum.photos/1024/480/?image=55'
+        },
+        {
+          caption: 'Third slide',
+          image: 'https://picsum.photos/1024/480/?image=58'
+        }
+      ]
+    };
   }
 }
 </script>
